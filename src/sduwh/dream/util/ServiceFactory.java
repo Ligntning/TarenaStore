@@ -1,4 +1,4 @@
-package sduwh.dream.service.impl;
+package sduwh.dream.util;
 
 import sduwh.dream.service.CategoryService;
 import sduwh.dream.service.ContactInfoService;
@@ -8,6 +8,14 @@ import sduwh.dream.service.OrderStatusService;
 import sduwh.dream.service.PayWayService;
 import sduwh.dream.service.ProductService;
 import sduwh.dream.service.UserService;
+import sduwh.dream.service.impl.CategoryServiceImpl;
+import sduwh.dream.service.impl.ContactInfoServiceImpl;
+import sduwh.dream.service.impl.OrderLineServiceImpl;
+import sduwh.dream.service.impl.OrderServiceImpl;
+import sduwh.dream.service.impl.OrderStatusServiceImpl;
+import sduwh.dream.service.impl.PayWayServiceImpl;
+import sduwh.dream.service.impl.ProductServiceImpl;
+import sduwh.dream.service.impl.UserServiceimpl;
 
 public  class ServiceFactory {
 	

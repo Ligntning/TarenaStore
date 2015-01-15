@@ -26,8 +26,8 @@ import sduwh.dream.service.OrderStatusService;
 import sduwh.dream.service.PayWayService;
 import sduwh.dream.service.impl.ContactInfoServiceImpl;
 import sduwh.dream.service.impl.OrderServiceImpl;
-import sduwh.dream.service.impl.ServiceFactory;
 import sduwh.dream.util.JDBCTools;
+import sduwh.dream.util.ServiceFactory;
 
 public class JDBCTest {
 

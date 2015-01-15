@@ -16,7 +16,7 @@ import sduwh.dream.service.ContactInfoService;
 import sduwh.dream.service.OrderService;
 import sduwh.dream.service.ProductService;
 import sduwh.dream.service.UserService;
-import sduwh.dream.service.impl.ServiceFactory;
+import sduwh.dream.util.ServiceFactory;
 
 //import cn.com.tarena.service.StudentService;
 //import cn.com.tarena.service.impl.StudentServiceImpl;
