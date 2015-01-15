@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
   <display-name>TarenaStore</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
@@ -9,4 +9,101 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <filter>
+    <filter-name>Filter1</filter-name>
+    <filter-class>sduwh.dream.web.Filter.Filter1</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>Filter1</filter-name>
+    <url-pattern>*.func</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <servlet-name>orderList</servlet-name>
+    <servlet-class>sduwh.dream.web.orderList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>orderList</servlet-name>
+    <url-pattern>/orderL</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>orderDetail</servlet-name>
+    <servlet-class>sduwh.dream.web.orderDetail</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>orderDetail</servlet-name>
+    <url-pattern>/orderD</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ProductList</servlet-name>
+    <servlet-class>sduwh.dream.web.ProductList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProductList</servlet-name>
+    <url-pattern>/productL</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ProductDetail</servlet-name>
+    <servlet-class>sduwh.dream.web.ProductDetail</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProductDetail</servlet-name>
+    <url-pattern>/productD</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>shoppingCart</servlet-name>
+    <servlet-class>sduwh.dream.web.shoppingCart</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>shoppingCart</servlet-name>
+    <url-pattern>/shoppingC</url-pattern>
+  </servlet-mapping>
+    <servlet>
+    <servlet-name>orderConfirm</servlet-name>
+    <servlet-class>sduwh.dream.web.orderConfirm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>orderConfirm</servlet-name>
+    <url-pattern>/orderC</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>UserLoginServlet</servlet-name>
+    <servlet-class>sduwh.dream.web.UserLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserLoginServlet</servlet-name>
+    <url-pattern>/userLoginS</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>UserManageServlet</servlet-name>
+    <servlet-class>sduwh.dream.web.UserManageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserManageServlet</servlet-name>
+    <url-pattern>/userManageS</url-pattern>
+  </servlet-mapping>
+    <servlet>
+    <servlet-name>UserModifyServlet</servlet-name>
+    <servlet-class>sduwh.dream.web.UserModifyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserModifyServlet</servlet-name>
+    <url-pattern>/userModifyS</url-pattern>
+  </servlet-mapping>
+     <servlet>
+    <servlet-name>UserRegisterServlet</servlet-name>
+    <servlet-class>sduwh.dream.web.UserRegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserRegisterServlet</servlet-name>
+    <url-pattern>/userRegisterS</url-pattern>
+  </servlet-mapping>
+  
+       <servlet>
+    <servlet-name>ControllerServlet</servlet-name>
+    <servlet-class>sduwh.dream.web.controller.ControllerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ControllerServlet</servlet-name>
+    <url-pattern>*.action</url-pattern>
+  </servlet-mapping>
 </web-app>
