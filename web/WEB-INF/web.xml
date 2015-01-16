@@ -97,6 +97,14 @@
     <servlet-name>UserRegisterServlet</servlet-name>
     <url-pattern>/userRegisterS</url-pattern>
   </servlet-mapping>
+   <servlet>
+    <servlet-name>errorServlet</servlet-name>
+    <servlet-class>sduwh.dream.web.errorServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>errorServlet</servlet-name>
+    <url-pattern>/error</url-pattern>
+  </servlet-mapping>
   
        <servlet>
     <servlet-name>ControllerServlet</servlet-name>
